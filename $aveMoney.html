@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>$ave Money</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="$aveMoney.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="$aveMoney.js"></script>
+    </script>
+</head>
+
+<body onload="user_location();">
+<div id="outer">
+    <br style="line-height: 300%;" />
+    <div id="initial" class="scroll">
+        <form>
+            <div class=".input">
+                <input type="text" class="form-control input" placeholder="What are you looking for?" value="" id="query">
+       </div>
+       </form>
+        <br>
+        <form>
+            <div class=".input">
+                <input type="text" class="form-control input" placeholder="Enter zip code or address..." value="" id="location">
+            </div>
+        </form>
+        <br style="line-height: 350%;" />
+            <button class="btn btn-default" type="submit" onclick="slide_left();"><i class="glyphicon glyphicon-search"></i>
+            </button>
+    </div>
+    <div id="results" class="scroll">
+        <button onclick="slide_right();">BACK</button>
+        <div class="table">
+            <div class="row">
+                <div class="cell">
+                	<p id="query_query">Searched for:</p>
+                </div>
+            </div>
+        </div>
+        <div class="table" id="main">
+            <div class="row">
+                <div class="cell">
+                    <p id="query_total">Total:</p>
+                </div>
+                <div class="cell">
+                    <p id="query_perpage">Results per page:</p>
+                </div>
+                <div class="cell">
+                    <p id="query_radius">Radius:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell">
+                    <th>Title</th>
+                </div>
+                <div class="cell">
+                    <th>Merchant</th>
+                </div>
+                <div class="cell">
+                    <th>Price</th>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+html,
+body {
+    background-image:url("assets/stars.jpg");
+    height: 100vh;
+    width: 200vw;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#outer {
+    width: 100vw;
+    display: table;
+    top: 0;
+    position: absolute;
+}
+
+#initial {
+    float: left;
+    width: 100vw;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input {
+	text-align: center;
+    height: 10vh !important;
+    font-size: 1.5em !important;
+}
+
+.input {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.btn {
+	border-radius: 360px;
+    width: 16vw;
+    height: 8vh;
+}
+
+#results {
+    float: right;
+    width: 100vw;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: -150%;
+}
+
+.table {
+    display: table;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: center;
+    border: solid 1px;
+}
